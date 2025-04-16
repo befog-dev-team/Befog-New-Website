@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 
+import logo1 from "../assets/images/logo1.png";
+import logo2 from "../assets/images/logo2.png";
+import logo3 from "../assets/images/logo3.png";
+import logo4 from "../assets/images/logo4.png";
+
+const logos = [logo1, logo2, logo3, logo4];
+
 const testimonials = [
   {
     name: "Sarah Johnson",
@@ -92,7 +99,7 @@ export function TestimonialsSection() {
         </div>
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 items-center">
-          {[...Array(4)].map((_, index) => (
+          {logos.map((logo, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0 }}
@@ -103,7 +110,7 @@ export function TestimonialsSection() {
             >
               <div className="h-22 flex items-center justify-center">
                 <motion.img
-                  src={`/images/logo${index + 1}.png`} // Update the path to your actual image location
+                  src={logo}
                   alt={`Logo ${index + 1}`}
                   className="h-12 w-24 object-contain"
                 />
