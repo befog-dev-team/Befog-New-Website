@@ -91,7 +91,6 @@ export function Footer() {
             <h3 className="font-semibold text-lg mb-6">Contact</h3>
             <ul className="space-y-4">
               <li className="text-gray-600 dark:text-gray-300">
-                1234 Innovation Way<br />
                 Lucknow, India 226001
               </li>
               <li>

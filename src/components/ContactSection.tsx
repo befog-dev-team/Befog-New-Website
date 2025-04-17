@@ -69,7 +69,7 @@ export function ContactSection() {
                 {
                   icon: MapPin,
                   title: "Our Location",
-                  content: "1234 Innovation Way\nLucknow, India 226001",
+                  content: "Lucknow, India 226001",
                 },
                 {
                   icon: Phone,

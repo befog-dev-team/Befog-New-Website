@@ -53,20 +53,20 @@ export function AboutSection() {
                 <div className="shrink-0 w-6 h-6 rounded-full bg-befog-100 dark:bg-befog-800 flex items-center justify-center">
                   <Check className="w-4 h-4 text-befog-600 dark:text-befog-300" />
                 </div>
-                <p><strong>100+ successful projects</strong> delivered across multiple industries, from startups to enterprises.</p>
+                <p><strong>successful projects</strong> delivered across multiple industries, from startups to enterprises.</p>
               </div>
               <div className="flex gap-3">
                 <div className="shrink-0 w-6 h-6 rounded-full bg-befog-100 dark:bg-befog-800 flex items-center justify-center">
                   <Check className="w-4 h-4 text-befog-600 dark:text-befog-300" />
                 </div>
-                <p><strong>Team of 50+ experts</strong> with deep expertise in modern technologies and best practices.</p>
+                <p><strong>Team of experts</strong> with deep expertise in modern technologies and best practices.</p>
               </div>
-              <div className="flex gap-3">
+              {/* <div className="flex gap-3">
                 <div className="shrink-0 w-6 h-6 rounded-full bg-befog-100 dark:bg-befog-800 flex items-center justify-center">
                   <Check className="w-4 h-4 text-befog-600 dark:text-befog-300" />
                 </div>
                 <p><strong>Global client base</strong> spanning North America, Europe, and Asia-Pacific regions.</p>
-              </div>
+              </div> */}
             </div>
             
             <div>
