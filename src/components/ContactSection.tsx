@@ -19,7 +19,7 @@ export function ContactSection() {
     const form = event.currentTarget;
     const formData = new FormData(form);
 
-    formData.append("access_key", "18d72c19-fa53-4842-8841-7fe716992f9b");
+    formData.append("access_key", "3c6bc36b-79dc-474f-b0ad-768e1f43f82f");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
