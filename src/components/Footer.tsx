@@ -1,6 +1,6 @@
 
 import { Facebook, Twitter, Instagram, Linkedin, Github } from "lucide-react";
-
+import logo from '@/assets/logo.svg'; 
 export function Footer() {
   return (
     <footer className="bg-gray-100 dark:bg-befog-950 pt-16 pb-8">
@@ -8,10 +8,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-befog-500 to-befog-700 flex items-center justify-center">
+              {/* <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-befog-500 to-befog-700 flex items-center justify-center">
                 <span className="text-white font-bold text-lg">B</span>
-              </div>
-              <span className="text-xl font-bold text-befog-900 dark:text-white">Befog</span>
+              </div> */}
+              <span className="text-xl font-bold text-befog-900 dark:text-white"><img src={logo} alt="logo" /></span>
             </div>
             <p className="text-gray-600 dark:text-gray-300 mb-6 text-balance max-w-xs">
               Innovative software solutions for businesses of all sizes. Transform your ideas into powerful software.
