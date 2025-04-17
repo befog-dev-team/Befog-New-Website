@@ -10,8 +10,8 @@ const services = [
   },
   {
     icon: <Smartphone className="w-6 h-6" />,
-    title: "Mobile Solutions",
-    description: "Intuitive, high-performance apps that deliver exceptional user experiences across all devices."
+    title: "Mobile App Development",
+    description: "Crafting seamless, high-performing mobile apps designed to captivate users and work flawlessly on every device."
   },
   {
     icon: <LayoutDashboard className="w-6 h-6" />,
