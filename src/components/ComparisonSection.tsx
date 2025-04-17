@@ -22,12 +22,12 @@ const comparisonData = [
     others: false,
     befogAdvantage: "Advanced machine learning & predictive analysis"
   },
-  {
-    feature: "Cloud Infrastructure",
-    befog: true,
-    others: true,
-    befogAdvantage: "Multi-cloud strategy with automated scaling"
-  },
+  // {
+  //   feature: "Cloud Infrastructure",
+  //   befog: true,
+  //   others: true,
+  //   befogAdvantage: "Multi-cloud strategy with automated scaling"
+  // },
   {
     feature: "24/7 Support",
     befog: true,
@@ -46,12 +46,12 @@ const comparisonData = [
     others: true,
     befogAdvantage: "True agile with bi-weekly deliverables & feedback loops"
   },
-  {
-    feature: "Data Security Compliance",
-    befog: true,
-    others: false,
-    befogAdvantage: "GDPR, HIPAA, & industry-specific compliance expertise"
-  }
+  // {
+  //   feature: "Data Security Compliance",
+  //   befog: true,
+  //   others: false,
+  //   befogAdvantage: "GDPR, HIPAA, & industry-specific compliance expertise"
+  // }
 ];
 
 export function ComparisonSection() {
