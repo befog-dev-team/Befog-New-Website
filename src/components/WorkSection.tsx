@@ -14,9 +14,9 @@ const projects = [
   },
   {
     title: "Modeweltjob",
-    category: "Fashion Career Platform",
+    category: "Fashion Designers Job Platform",
     image: image2,
-    description: "An integrated platform for fashion designers, stylists, photographers, and industry professionals to connect with top brands, recruiters, and creative opportunities worldwide.",
+    description: "An integrated Job platform for fashion designers, stylists, photographers, and industry professionals to connect with top brands, recruiters, and creative opportunities worldwide.",
   },
   {
     title: "Lego House Architects",
