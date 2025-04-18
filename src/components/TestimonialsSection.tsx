@@ -40,11 +40,7 @@ export function TestimonialsSection() {
     >
       <div className="container">
         <div className="text-center mb-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+          <div
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               What Our Clients Say
@@ -53,17 +49,12 @@ export function TestimonialsSection() {
               Don't take our word for it. Here's what our clients have to say
               about working with Befog.
             </p>
-          </motion.div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+            <div
               className="bg-white dark:bg-befog-900/30 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow relative"
             >
               <div className="absolute -top-5 right-8">
@@ -94,18 +85,14 @@ export function TestimonialsSection() {
                   <p className="text-sm text-gray-500 dark:text-gray-400">{testimonial.role}</p>
                 </div> */}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 items-center">
           {logos.map((logo, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 0.7 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="text-center grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all"
             >
               <div className="h-22 flex items-center justify-center">
@@ -115,7 +102,7 @@ export function TestimonialsSection() {
                   className="h-12 w-24 object-contain"
                 />
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

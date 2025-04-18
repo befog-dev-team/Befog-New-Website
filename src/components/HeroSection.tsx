@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
 import { ArrowRight, Database, Cpu, Cloud, Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from 'react-router-dom';
 
 export function HeroSection() {
   return (
@@ -15,10 +15,7 @@ export function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-16 gap-x-12 items-center">
           
           {/* Left Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+          <div
             className="space-y-8 text-center lg:text-left"
           >
             <div className="inline-block">
@@ -41,17 +38,16 @@ export function HeroSection() {
                 Get Started
                 <ArrowRight size={16} className="ml-2" />
               </Button>
+              <Link to="/services">
               <Button size="lg" variant="outline" className="border-orange-200 hover:bg-orange-50 text-orange-700 shadow-sm">
                 Our Services
               </Button>
+              </Link>
             </div>
-          </motion.div>
+          </div>
           
           {/* Right Feature Cards */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+          <div
             className="relative"
           >
             <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -83,11 +79,8 @@ export function HeroSection() {
                   extraClass: "mt-10 sm:mt-0",
                 },
               ].map((item, index) => (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ y: 20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: item.delay }}
                   className={`bg-white/90 dark:bg-orange-900/30 p-6 rounded-xl shadow-lg backdrop-blur-sm border border-orange-100 dark:border-orange-800/30 hover:scale-[1.02] transition-transform ${item.extraClass}`}
                 >
                   <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-100 to-orange-200 dark:from-orange-800 dark:to-orange-700 flex items-center justify-center mb-4">
@@ -95,7 +88,7 @@ export function HeroSection() {
                   </div>
                   <h3 className="text-lg font-semibold mb-1">{item.title}</h3>
                   <p className="text-gray-600 dark:text-gray-300 text-sm">{item.desc}</p>
-                </motion.div>
+                </div>
               ))}
             </div>
 
@@ -103,7 +96,7 @@ export function HeroSection() {
             <div className="absolute -right-10 -bottom-10 -z-10 w-80 h-80 opacity-20 dark:opacity-10 pointer-events-none">
               <div className="w-full h-full rounded-full bg-gradient-to-br from-orange-300 to-purple-300 blur-3xl animate-blob"></div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { CodeAnimation } from "@/components/CodeAnimation";
 import { TechStackLogos } from "@/components/TechStackLogos";
@@ -8,12 +7,8 @@ export function AboutSection() {
     <section id="about" className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <motion.div
+          <div
             className="relative"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
           >
             <div className="relative rounded-xl overflow-hidden shadow-xl">
               <img 
@@ -24,13 +19,9 @@ export function AboutSection() {
             </div>
             <div className="absolute -bottom-6 -right-6 w-48 h-48 sm:w-64 sm:h-64 bg-befog-100 rounded-full -z-10"></div>
             <div className="absolute -top-6 -left-6 w-24 h-24 sm:w-32 sm:h-32 bg-befog-200 rounded-full -z-10"></div>
-          </motion.div>
+          </div>
           
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
+          <div
           >
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">About Befog</h2>
@@ -61,28 +52,20 @@ export function AboutSection() {
                 drive growth, and create exceptional user experiences.
               </p>
             </div>
-          </motion.div>
+          </div>
         </div>
 
         <div className="mt-20 flex flex-col lg:flex-row gap-12 items-center">
-          <motion.div
+          <div
             className="w-full lg:w-1/2"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
           >
             <div className="max-w-xl mx-auto lg:mx-0 w-full">
               <CodeAnimation />
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
+          <div
             className="w-full lg:w-1/2"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
           >
             <div className="space-y-6 max-w-xl mx-auto lg:mx-0 w-full">
               <h3 className="text-2xl font-semibold">The Befog Difference</h3>
@@ -105,7 +88,7 @@ export function AboutSection() {
                 ))}
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
 
         <div className="mt-16">

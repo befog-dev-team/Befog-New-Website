@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { FaReact, FaVuejs, FaNodeJs, FaAngular, FaDocker } from "react-icons/fa";
 import { TbBrandReactNative } from "react-icons/tb";
 import { SiPython, SiKubernetes, SiGraphql, SiTypescript, SiMongodb, SiTailwindcss } from "react-icons/si";
@@ -22,27 +21,19 @@ export function TechStackLogos() {
   return (
     <div className="py-12">
       <div className="container">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+        <div
           className="text-center mb-8"
         >
           <h3 className="text-2xl font-semibold mb-2">Our Tech Stack</h3>
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             We work with the latest technologies to deliver modern, scalable, and maintainable solutions.
           </p>
-        </motion.div>
+        </div>
 
         <div className="flex flex-wrap justify-center gap-6">
           {technologies.map((tech, index) => (
-            <motion.div
+            <div
               key={tech.name}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: index * 0.05 }}
               className="text-center hover-scale"
             >
               <div
@@ -54,7 +45,7 @@ export function TechStackLogos() {
                 </div>
               </div>
               <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{tech.name}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

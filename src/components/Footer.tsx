@@ -37,7 +37,7 @@ export function Footer() {
           
           <div>
             <h3 className="font-semibold text-lg mb-6">Company</h3>
-            <ul className="space-y-4">
+            {/* <ul className="space-y-4">
               <li>
                 <a href="#about" className="text-gray-600 dark:text-gray-300 hover:text-befog-600 dark:hover:text-befog-400 transition-colors">
                   About Us
@@ -58,7 +58,7 @@ export function Footer() {
                   Press
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </div>
           
           <div>
@@ -111,7 +111,7 @@ export function Footer() {
           <p className="text-gray-500 dark:text-gray-400 text-sm mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} Befog. All rights reserved.
           </p>
-          <div className="flex space-x-6">
+          {/* <div className="flex space-x-6">
             <a href="#" className="text-gray-500 dark:text-gray-400 text-sm hover:text-befog-600 dark:hover:text-befog-400 transition-colors">
               Privacy Policy
             </a>
@@ -121,7 +121,7 @@ export function Footer() {
             <a href="#" className="text-gray-500 dark:text-gray-400 text-sm hover:text-befog-600 dark:hover:text-befog-400 transition-colors">
               Cookie Policy
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
