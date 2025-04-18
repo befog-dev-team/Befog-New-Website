@@ -17,16 +17,16 @@ export function Footer() {
               Innovative software solutions for businesses of all sizes. Transform your ideas into powerful software.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-8 h-8 rounded-full bg-gray-200 dark:bg-befog-900 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-befog-500 hover:text-white transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61573944255983" className="w-8 h-8 rounded-full bg-gray-200 dark:bg-befog-900 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-befog-500 hover:text-white transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-gray-200 dark:bg-befog-900 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-befog-500 hover:text-white transition-colors">
+              {/* <a href="#" className="w-8 h-8 rounded-full bg-gray-200 dark:bg-befog-900 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-befog-500 hover:text-white transition-colors">
                 <Twitter className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-gray-200 dark:bg-befog-900 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-befog-500 hover:text-white transition-colors">
+              </a> */}
+              <a href="https://www.instagram.com/befogtech/" className="w-8 h-8 rounded-full bg-gray-200 dark:bg-befog-900 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-befog-500 hover:text-white transition-colors">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-gray-200 dark:bg-befog-900 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-befog-500 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/company/befog-aw-technologies/posts/?feedView=all" className="w-8 h-8 rounded-full bg-gray-200 dark:bg-befog-900 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-befog-500 hover:text-white transition-colors">
                 <Linkedin className="w-4 h-4" />
               </a>
               {/* <a href="#" className="w-8 h-8 rounded-full bg-gray-200 dark:bg-befog-900 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-befog-500 hover:text-white transition-colors">
