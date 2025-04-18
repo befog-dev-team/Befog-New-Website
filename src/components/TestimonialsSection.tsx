@@ -8,6 +8,20 @@ import logo4 from "../assets/images/logo4.png";
 
 const logos = [logo1, logo2, logo3, logo4];
 
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0 },
+};
+
 const testimonials = [
   {
     name: "Sarah Johnson",
@@ -40,8 +54,7 @@ export function TestimonialsSection() {
     >
       <div className="container">
         <div className="text-center mb-16">
-          <div
-          >
+          <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               What Our Clients Say
             </h2>
@@ -53,40 +66,48 @@ export function TestimonialsSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div
-              className="bg-white dark:bg-befog-900/30 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow relative"
-            >
-              <div className="absolute -top-5 right-8">
-                <div className="w-10 h-10 rotate-45 bg-white dark:bg-befog-900/30"></div>
-              </div>
-              <div className="flex space-x-1 mb-4 text-yellow-400">
-                {[...Array(testimonial.stars)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-current" />
-                ))}
-                {[...Array(5 - testimonial.stars)].map((_, i) => (
-                  <Star
-                    key={i + testimonial.stars}
-                    className="w-5 h-5 text-gray-300"
-                  />
-                ))}
-              </div>
-              <p className="text-gray-600 dark:text-gray-300 mb-6 italic">
-                "{testimonial.text}"
-              </p>
-              <div className="flex items-center space-x-4">
-                {/* <img 
-                  src={testimonial.image} 
-                  alt={testimonial.name} 
-                  className="w-12 h-12 rounded-full object-cover"
-                /> */}
-                {/* <div>
-                  <p className="font-semibold">{testimonial.name}</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">{testimonial.role}</p>
-                </div> */}
-              </div>
-            </div>
-          ))}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="show"
+            className="contents"
+          >
+            {testimonials.map((testimonial, index) => (
+              <motion.div
+                key={index}
+                variants={cardVariants}
+                whileHover={{
+                  scale: 1.03,
+                  boxShadow: "0 8px 24px #eb5a0c",
+                }}
+                transition={{ type: "spring", stiffness: 200, damping: 20 }}
+                className="bg-white dark:bg-befog-900/30 rounded-xl p-8 shadow-sm relative overflow-hidden"
+              >
+                {/* Quotation diamond */}
+                <div className="absolute -top-5 right-8">
+                  <div className="w-10 h-10 rotate-45 bg-white dark:bg-befog-900/30 shadow-md"></div>
+                </div>
+
+                {/* Star Rating */}
+                <div className="flex space-x-1 mb-4 text-yellow-400">
+                  {[...Array(testimonial.stars)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-current" />
+                  ))}
+                  {[...Array(5 - testimonial.stars)].map((_, i) => (
+                    <Star
+                      key={i + testimonial.stars}
+                      className="w-5 h-5 text-gray-300"
+                    />
+                  ))}
+                </div>
+
+                {/* Text */}
+                <p className="text-gray-600 dark:text-gray-300 mb-6 italic">
+                  "{testimonial.text}"
+                </p>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 items-center">
