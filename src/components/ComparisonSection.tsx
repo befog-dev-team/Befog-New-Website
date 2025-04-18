@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
+import { Link } from "react-router-dom";
 
 const comparisonData = [
   {
@@ -153,9 +154,11 @@ export function ComparisonSection() {
         >
           <h3 className="text-2xl font-bold mb-3">Ready to Experience the Befog Difference?</h3>
           <p className="mb-6">Join our growing list of satisfied clients who trust us with their most critical software needs.</p>
+          <Link to="/contact">
           <button className="bg-[#ffe8d1] text-orange-500 px-8 py-3 rounded-lg font-medium hover:bg-befog-50 transition-colors">
             Contact Us Today
           </button>
+          </Link>
         </motion.div>
       </div>
     </section>
