@@ -35,9 +35,9 @@ export function Footer() {
             </div>
           </div>
           
-          <div>
+          {/* <div>
             <h3 className="font-semibold text-lg mb-6">Company</h3>
-            {/* <ul className="space-y-4">
+            <ul className="space-y-4">
               <li>
                 <a href="#about" className="text-gray-600 dark:text-gray-300 hover:text-befog-600 dark:hover:text-befog-400 transition-colors">
                   About Us
@@ -58,8 +58,8 @@ export function Footer() {
                   Press
                 </a>
               </li>
-            </ul> */}
-          </div>
+            </ul>
+          </div> */}
           
           <div>
             <h3 className="font-semibold text-lg mb-6">Services</h3>
